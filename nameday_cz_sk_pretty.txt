@@ -66,7 +66,7 @@ Date|cs-CZ|sk-SK
 5.3|Kazimír|Fridrich
 6.3|Miroslav|Radoslav/Radoslava
 7.3|Tomáš|Tomáš
-8.3|Gabriela/Zoltán|Mezinárodní den žen(významný den) Alan/Alana Medzinárodný deň žien
+8.3|Gabriela/Zoltán Mezinárodní den žen(významný den)|Alan/Alana Medzinárodný deň žien
 9.3|Františka/Rebeka Den památky obětí vyhlazení terezínského rodinného tábora v Osvětimi-Březince(významný den)|Františka
 10.3|Viktorie|Branislav/Bronislav/Bruno
 11.3|Anděla/Angelika|Angela/Angelika

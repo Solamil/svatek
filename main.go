@@ -8,6 +8,7 @@ import (
 	"time"
 	"encoding/json"
 	"strings"
+	"strconv"
 	"os"
 )
 
@@ -34,6 +35,11 @@ type todayUrlParams struct {
 	Country [1]string `json:"country"`
 	Pretty []string	`json:"p"`
 }
+
+type easterUrlParams struct {
+	Year [1]string `json:"year"`
+}
+
 var Country string = "cs-CZ"
 const Lines int = 367
 const Columns int = 3
@@ -42,9 +48,11 @@ var list = [Lines][Columns]string{{}}
 func main() {
 	file := File
 	prepareList(file)
+	fmt.Println(velikonoce(2022))
 	http.HandleFunc("/index.html", index_handler)
 	http.HandleFunc("/today", today_handler)
 	http.HandleFunc("/dnes", today_handler)
+	http.HandleFunc("/velikonoce", easterday_handler)
 	http.HandleFunc("/nameday_cz_sk.txt", file_handler)
 	http.HandleFunc("/nameday_cz_sk_pretty.txt", file_handler)
 	http.HandleFunc("/", index_handler)
@@ -94,6 +102,67 @@ func today_handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Write([]byte(result))
+}
+
+func easterday_handler(w http.ResponseWriter, r *http.Request) {
+	t := time.Now()
+	year := t.Year()
+	q, _ := url.PathUnescape(r.URL.RawQuery)
+	if len(q) != 0 {
+		m, _ := url.ParseQuery(q)
+		js, _ := json.Marshal(m)
+
+		var param *easterUrlParams
+		json.Unmarshal(js, &param)		
+		
+		if len(param.Year[0]) > 0 {
+			y, err := strconv.Atoi(param.Year[0])
+			year = y
+			if err != nil || year <= 1583 {
+				w.Write([]byte("Wrong year. Calculation is for gregorian calendar therefore from 1583 above."))
+				return
+			}
+		}
+		
+	}
+	w.Write([]byte(velikonoce(year)))
+}
+
+// credits to https://kalendar.beda.cz/vypocet-velikonocni-nedele-v-ruznych-programovacich-jazycich
+func velikonoce(rok int) string {
+	if rok <= 1583 {
+		return ""
+	}
+	zlateCislo := (rok % 19) + 1
+	julEpakta := (11 * zlateCislo) % 30
+	stoleti := int(rok / 100) + 1
+	slunecniOprava := int(3 * (stoleti - 16) / 4)
+	mesicniOprava := int(8 * (stoleti - 15) / 25)
+	epakta := (julEpakta - 10 - slunecniOprava + mesicniOprava) % 30
+	if epakta < 0 {
+		epakta += 30
+	}
+	tmp := epakta
+	if epakta == 24 || (epakta == 25 && zlateCislo > 11) {
+		tmp += 1
+	}
+	pfm := 0 // Paschal Full Moon
+	if tmp < 24 {
+		pfm = 44 - tmp
+	} else {
+		pfm = 74 - tmp
+	}
+
+	gregOprava := 10 + slunecniOprava
+	denTydnePfm := (rok + (int)(rok / 4) - gregOprava + pfm) % 7
+	if denTydnePfm < 0 {
+		denTydnePfm += 7
+	}
+	velNedele := pfm + 7 - denTydnePfm
+	if velNedele < 32 {
+		return fmt.Sprintf("%d. březen", velNedele)	
+	} 
+	return fmt.Sprintf("%d. duben", velNedele-31)	
 }
 
 func prepareList(name string) {

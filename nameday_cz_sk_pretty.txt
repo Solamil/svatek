@@ -1,10 +1,10 @@
 Date|cs-CZ|sk-SK
-1.1|🎇Nový rok 🇨🇿Státní svátek Den obnovy samostatného českého státu|🎇Nový rok 🇸🇰Štátny sviatok Deň vzniku Slovenskej republiky
+1.1|🎇Nový rok, 🇨🇿Státní svátek, Den obnovy samostatného českého státu|🎇Nový rok, 🇸🇰Štátny sviatok, Deň vzniku Slovenskej republiky
 2.1|Karina/Vasil|Alexandra/Sandra/Karina
 3.1|Radmila/Radomil|Daniela
 4.1|Diana|Drahoslav
 5.1|Dalimil|Andrea/Artur
-6.1|Kašpar/Melichar/Baltazar 🎄👑Tři králové|Antónia Zjavenie Pána(🎄👑Traja králi a vianočný sviatok pravoslávných kresťanov)
+6.1|Kašpar/Melichar/Baltazar, 🎄👑Tři králové|Antónia, Zjavenie Pána(🎄👑Traja králi a vianočný sviatok pravoslávných kresťanov)
 7.1|Vilma|Bohuslava
 8.1|Čestmír|Severín
 9.1|Vladan/Valtr|Alexej/Alex/Alexia
@@ -14,7 +14,7 @@ Date|cs-CZ|sk-SK
 13.1|Edita/Leontýna|Rastislav
 14.1|Radovan|Radovan/Radovana
 15.1|Alice|Dobroslav/Dobroslava
-16.1|Ctirad Den památky Jana Palacha(významný den)|Kristína
+16.1|Ctirad, Den památky Jana Palacha(významný den)|Kristína
 17.1|Drahoslav|Nataša
 18.1|Vladislav/Vladislava|Bohdana
 19.1|Doubravka|Mário/Sára/Zara
@@ -25,13 +25,13 @@ Date|cs-CZ|sk-SK
 24.1|Milena|Timotej/Timon/Timea
 25.1|Miloš|Gejza
 26.1|Zora/Jitřenka|Tamara
-27.1|Ingrid Den památky obětí holocaustu a předcházení zločinům proti lidskosti(významný den)|Bohuš
+27.1|Ingrid, Den památky obětí holocaustu a předcházení zločinům proti lidskosti(významný den)|Bohuš
 28.1|Otýlie|Alfonz
 29.1|Zdislava|Gašpar
 30.1|Robin/Erna|Ema
 31.1|Marika|Emil
 1.2|Hynek|Tatiana/Táňa
-2.2|Nela Hromnice|Erich/Erik/Erika Hromnice
+2.2|Nela, Hromnice|Erich/Erik/Erika, Hromnice
 3.2|Blažej|Blažej
 4.2|Jarmila|Veronika
 5.2|Dobromila|Agáta
@@ -60,17 +60,17 @@ Date|cs-CZ|sk-SK
 28.2|Lumír|Zlatica
 29.2|Horymír/Horymíra|Radomír
 1.3|Bedřich/Bedřiška|Albín
-2.3|Anežka|Anežka Popolcová streda
+2.3|Anežka|Anežka, Popolcová streda
 3.3|Kamil|Bohumil/Bohumila
 4.3|Stela|Kazimír
 5.3|Kazimír|Fridrich
 6.3|Miroslav|Radoslav/Radoslava
 7.3|Tomáš|Tomáš
-8.3|Gabriela/Zoltán Mezinárodní den žen(významný den)|Alan/Alana Medzinárodný deň žien
-9.3|Františka/Rebeka Den památky obětí vyhlazení terezínského rodinného tábora v Osvětimi-Březince(významný den)|Františka
+8.3|Gabriela/Zoltán, Mezinárodní den žen(významný den)|Alan/Alana, Medzinárodný deň žien
+9.3|Františka/Rebeka, Den památky obětí vyhlazení terezínského rodinného tábora v Osvětimi-Březince(významný den)|Františka
 10.3|Viktorie|Branislav/Bronislav/Bruno
 11.3|Anděla/Angelika|Angela/Angelika
-12.3|Řehoř 🤝Den přístupu České republiky k Severoantlantické smlouvě(NATO)(významný den)|Gregor
+12.3|Řehoř, 🤝Den přístupu České republiky k Severoantlantické smlouvě(NATO)(významný den)|Gregor
 13.3|Růžena|Vlastimil
 14.3|Rút/Matylda|Matilda
 15.3|Ida|Svetlana
@@ -78,7 +78,7 @@ Date|cs-CZ|sk-SK
 17.3|Vlastimil/Vlastimila|Ľubica
 18.3|Eduard|Eduard
 19.3|Josef/Josefa|Jozef
-20.3|Světlana/Světla 💐První jarní den|Víťazoslav 💐Prvý jarný deň
+20.3|Světlana/Světla, 💐První jarní den|Víťazoslav, 💐Prvý jarný deň
 21.3|Radek|Blahoslav
 22.3|Leona/Lea|Beňadik/Benedikt
 23.3|Ivona|Adrián
@@ -86,7 +86,7 @@ Date|cs-CZ|sk-SK
 25.3|Marián|Marián
 26.3|Emanuel|Emanuel
 27.3|Dita|Alena
-28.3|Soňa Den narození Jana Amose Komenského(významný den)|Soňa
+28.3|Soňa, Den narození Jana Amose Komenského(významný den)|Soňa
 29.3|Taťána/Táňa|Miroslav
 30.3|Arnoštt/Ernest|Vieroslava
 31.3|Kvído|Benjamín
@@ -96,7 +96,7 @@ Date|cs-CZ|sk-SK
 4.4|Ivana|Izidor
 5.4|Miroslava/Mirka|Miroslava
 6.4|Vendula/Venuše|Irena
-7.4|Heřman/Hermína 📚Den vzdělanosti(významný den)|Zoltán
+7.4|Heřman/Hermína, 📚Den vzdělanosti(významný den)|Zoltán
 8.4|Ema|Albert
 9.4|Dušan|Milena
 10.4|Darja|Igor
@@ -124,17 +124,17 @@ Date|cs-CZ|sk-SK
 2.5|Zikmund|Žigmund
 3.5|Alexej/Alex|Galina
 4.5|Květoslav|Florián
-5.5|Klaudie Květnové povstání českého lidu(významný den)|Lesana/Lesia
+5.5|Klaudie, Květnové povstání českého lidu(významný den)|Lesana/Lesia
 6.5|Radoslav/Radoslava|Hermína
 7.5|Stanislav|Monika
-8.5|Státní svátek Den vítězství|Ingrida Deň víťazstva nad fašizmom Deň matiek
+8.5|Státní svátek, Den vítězství|Ingrida, Deň víťazstva nad fašizmom
 9.5|Ctibor|Roland
 10.5|Blažena|Viktória
 11.5|Svatava|Blažena
 12.5|Pankrác|Pankrác
 13.5|Servác|Servác
 14.5|Bonifác|Bonifác
-15.5|Žofie/Sofie 👪Den rodin (významný den)|Žofia/Sofia
+15.5|Žofie/Sofie, 👪Den rodin (významný den)|Žofia/Sofia
 16.5|Přemysl|Svetozár
 17.5|Aneta|Gizela
 18.5|Nataša|Viola
@@ -145,39 +145,39 @@ Date|cs-CZ|sk-SK
 23.5|Vladimír/Vladimíra|Želmíra
 24.5|Jana/Vanesa|Ela/Vanesa
 25.5|Viola|Urban
-26.5|Filip|Dušan Nanebovstúpenie Pána
+26.5|Filip|Dušan, Nanebovstúpenie Pána
 27.5|Valdemar|Iveta
 28.5|Vilém/Viliam|Viliam
 29.5|Maxmilián/Maxim|Vilma
 30.5|Ferdinand|Ferdinand
 31.5|Kamila|Petrana/Petronela/Nela
-1.6|Laura Mezinárodní den dětí|Žaneta Medzinárodný deň detí
+1.6|Laura, Mezinárodní den dětí|Žaneta, Medzinárodný deň detí
 2.6|Jarmil|Oxana/Xénia
 3.6|Tamara/Kevin|Karolína/Kevin
 4.6|Dalibor|Lenka
-5.6|Dobroslav/Dobroslava|Laura Turíce
+5.6|Dobroslav/Dobroslava|Laura, Turíce
 6.6|Norbert|Norbert
 7.6|Iveta/Slavoj|Róbert
 8.6|Medard|Medard
 9.6|Stanislava|Stanislava
-10.6|Gita/Margita 🌹Den památky obětí vyhlazení obce Lidice (významný den)|Margaréta/Gréta
+10.6|Gita/Margita, 🌹Den památky obětí vyhlazení obce Lidice (významný den)|Margaréta/Gréta
 11.6|Bruno|Jesika
 12.6|Antonie|Zlatko
 13.6|Antonín|Anton
 14.6|Roland/Herta|Vasil
 15.6|Vít|Vít
-16.6|Zbyněk|Bianka/Blanka Božie telo
+16.6|Zbyněk|Bianka/Blanka, Božie telo
 17.6|Adolf/Vikoslav|Adolf
-18.6|Milan/Milana Den hrdinů druhého odboje (významný den)|Vratislav
-19.6|Leoš/Leo Den otců|Alfréd Deň otcov
+18.6|Milan/Milana, Den hrdinů druhého odboje (významný den)|Vratislav
+19.6|Leoš/Leo|Alfréd
 20.6|Květa/Květuše|Valéria
-21.6|Alois/Aloise 🌞První letní den|Alojz 🌞Prvý letný deň
+21.6|Alois/Aloise, 🌞První letní den|Alojz, 🌞Prvý letný deň
 22.6|Pavla|Paulína/Paula/Pavla
 23.6|Zdeňka|Sidónia
 24.6|Jan|Ján
 25.6|Ivan|Olívia/Tadeáš
 26.6|Adriana/Adrian|Adriána
-27.6|Ladislav/Ladislava Den památky obětí komunistického režimu (významný den)|Ladislav/Ladislava
+27.6|Ladislav/Ladislava, Den památky obětí komunistického režimu (významný den)|Ladislav/Ladislava
 28.6|Lubomír/Lubomíra|Beáta
 29.6|Petr a Pavel|Peter/Pavol/Petra
 30.6|Šárka|Melánia
@@ -185,8 +185,8 @@ Date|cs-CZ|sk-SK
 2.7|Patricie|Berta
 3.7|Radomír/Radomíra|Miloslav
 4.7|Prokop|Prokop
-5.7|Státní svátek Den slovanských věrozvěstů Cyrila a Metoděje|Cyril/Metod Štátny sviatok Sviatok sv. Cyrila a sv. Metoda
-6.7|Státní svátek Den upálení mistra Jana Husa|Patrik/Patricía
+5.7|Státní svátek, Den slovanských věrozvěstů Cyrila a Metoděje|Cyril/Metod, Štátny sviatok, Sviatok sv. Cyrila a sv. Metoda
+6.7|Státní svátek, Den upálení mistra Jana Husa|Patrik/Patricía
 7.7|Bohuslava|Oliver
 8.7|Nora|Ivan
 9.7|Drahoslava/Drahuše|Lujza
@@ -223,16 +223,16 @@ Date|cs-CZ|sk-SK
 9.8|Roman|Ľubomíra
 10.8|Vavřinec|Vavrinec
 11.8|Zuzana|Zuzana
-12.8|Klára|Darina/Dárius/Dária 
+12.8|Klára|Darina/Dárius/Dária
 13.8|Alena|Ľubomír
 14.8|Alan|Mojmír
-15.8|Hana|Marcela Nanebovzatie Panny Márie
+15.8|Hana|Marcela, Nanebovzatie Panny Márie
 16.8|Jáchym|Leonard
 17.8|Petra|Milica
 18.8|Helena/Jelena|Elena/Helena
 19.8|Ludvík|Lýdia
 20.8|Bernard|Anabela
-21.8|Johana Den památky obětí invaze a následné okupace vojsky Varšavské smlouvy|Jana/Johana/Noema
+21.8|Johana, Den památky obětí invaze a následné okupace vojsky Varšavské smlouvy|Jana/Johana/Noema
 22.8|Bohuslav|Tichomír
 23.8|Sandra|Filip
 24.8|Bartoloměj|Bartoloměj
@@ -240,10 +240,10 @@ Date|cs-CZ|sk-SK
 26.8|Luděk/Luďka|Samuel
 27.8|Otakar|Silvia
 28.8|Augustýn|Augustín
-29.8|Evelína|Nikola/Nikolaj Štátny sviatok Výročie 🇸🇰Slovenského národného povstania
+29.8|Evelína|Nikola/Nikolaj, Štátny sviatok, Výročie 🇸🇰Slovenského národného povstania
 30.8|Vladěna|Ružena
 31.8|Pavlína|Nora
-1.9|Linda/Samuel/Jiljí|Drahoslava Štátný sviatok Deň Ústavy 🇸🇰Slovenskej republiky
+1.9|Linda/Samuel/Jiljí|Drahoslava, Štátný sviatok, Deň Ústavy 🇸🇰Slovenskej republiky
 2.9|Adéla|Linda/Rebeka
 3.9|Bronislav/Bronislava|Belo
 4.9|Jindřiška/Rozálie|Rozália
@@ -257,7 +257,7 @@ Date|cs-CZ|sk-SK
 12.9|Marie/Mia/Tobiáš|Mária/Mia
 13.9|Lubor|Ctibor/Tobiáš/Tobias
 14.9|Radka|Ľudomil
-15.9|Jolana|Jolana Sedembolestna Panna Mária
+15.9|Jolana|Jolana, Sedembolestna Panna Mária
 16.9|Ludmila/Lidmila|Ľudmila
 17.9|Naděžda/Naďa|Olympia/Melisa
 18.9|Kryštof|Eugénia
@@ -265,12 +265,12 @@ Date|cs-CZ|sk-SK
 20.9|Oleg|Ľuboslav/Ľuboslava
 21.9|Matouš|Matúš
 22.9|Darina|Móric
-23.9|Berta 🍂První podzimní den|Zdenka 🍂Prvý jesenný deň
+23.9|Berta, 🍂První podzimní den|Zdenka, 🍂Prvý jesenný deň
 24.9|Jaromír/Jaromíra|Ľubor/Ľuboš
 25.9|Zlata/Zlatuše|Vladislav
 26.9|Andrea|Edita
-27.9|Jonáš/Damián|Cyprián/Damián 
-28.9|Václav/Václava 🇨🇿Státní svátek Den české státnosti|Václav
+27.9|Jonáš/Damián|Cyprián/Damián
+28.9|Václav/Václava, 🇨🇿Státní svátek, Den české státnosti|Václav
 29.9|Michal/Michael|Michal/Michael/Michaela
 30.9|Jeroným/Ráchel|Jarolím
 1.10|Igor|Arnold
@@ -280,7 +280,7 @@ Date|cs-CZ|sk-SK
 5.10|Eliška|Viera
 6.10|Hanuš|Natália
 7.10|Justýna|Eliška/Elisa
-8.10|Věra Památný den sokolstva(významný den)|Brigita
+8.10|Věra, Památný den sokolstva(významný den)|Brigita
 9.10|Štefan/Sára|Dionýz
 10.10|Marina|Slavomíra
 11.10|Andrej|Valentína
@@ -300,11 +300,11 @@ Date|cs-CZ|sk-SK
 25.10|Beáta|Aurel
 26.10|Erik|Demeter
 27.10|Šarlota/Zoe|Sabína
-28.10|Alfréd Státní svátek Den vzniku samostatného 🇨🇿československého státu| Dobromila
+28.10|Alfréd, Státní svátek, Den vzniku samostatného 🇨🇿československého státu| Dobromila
 29.10|Silvie/Sylva|Klára/Kiara
 30.10|Tadeáš|Šimon/Simon/Simona
 31.10|Štěpánka|Aurélia
-1.11|Felix|Denis/Denisa Sviatok všetkých svätých
+1.11|Felix|Denis/Denisa, Sviatok všetkých svätých
 2.11|Památka zesnulých|Pamiatka zosnulých
 3.11|Hubert|Hubert
 4.11|Karel/Karla|Karol
@@ -314,13 +314,13 @@ Date|cs-CZ|sk-SK
 8.11|Bohumír/Bohumíra|Bohumír
 9.11|Bohdan|Teodor/Teo
 10.11|Evžen|Tibor
-11.11|Martin Den válečných veteránů(významný den)|Martin/Maroš
+11.11|Martin, Den válečných veteránů(významný den)|Martin/Maroš
 12.11|Benedikt|Svätopluk/Jonáš
 13.11|Tibor|Stanislav
 14.11|Sáva|Irma
 15.11|Leopold|Leopold
 16.11|Otmar|Agnesa
-17.11|Mahulena/Gertruda ❤️✌️✌️Státní svátek Den boje za svobodu a demokracii a Mezinárodní den studentstva|Klaudia ❤️✌️✌️Štátný sviatok Deň boja za slobodu a demokraciu a Medzinárodný deň studentstva
+17.11|Mahulena/Gertruda, ❤️✌️✌️Státní svátek, Den boje za svobodu a demokracii a Mezinárodní den studentstva|Klaudia, ❤️✌️✌️Štátný sviatok, Deň boja za slobodu a demokraciu a Medzinárodný deň studentstva
 18.11|Romana|Eugen
 19.11|Alžběta|Alžběta/Liliana
 20.11|Nikola/Nikol|Félix
@@ -341,7 +341,7 @@ Date|cs-CZ|sk-SK
 5.12|Jitka|Oto
 6.12|Mikuláš/Nikolas|Mikuláš/Nikolas
 7.12|Ambrož/Benjamin|Ambróz
-8.12|Květoslava|Marína Nepoškvrnené počatie Panny Márie
+8.12|Květoslava|Marína, Nepoškvrnené počatie Panny Márie
 9.12|Vratislav/Vratislava|Izabela
 10.12|Julie|Radúz
 11.12|Dana/Danuše|Hilda
@@ -354,12 +354,12 @@ Date|cs-CZ|sk-SK
 18.12|Miloslav|Sláva/Slávka
 19.12|Ester|Judita
 20.12|Dagmar/Dáša|Dagmara
-21.12|Natálie - ❄️První zimní den|Bohdan/Noel - ❄️Prvý zimný deň
+21.12|Natálie, ❄️První zimní den|Bohdan/Noel, ❄️Prvý zimný deň
 22.12|Šimon|Adela
 23.12|Vlasta|Nadežda/Naďa
-24.12|Adam a Eva - 🎄Štědrý den|Adam/Eva - 🎄Štedrý deň
+24.12|Adam a Eva, 🎄Štědrý den|Adam/Eva, 🎄Štedrý deň
 25.12|🎄Boží hod vánoční|🎄Prvý sviatok vianočný
-26.12|Štěpán - 🎄2. svátek vánoční|Štefan - 🎄Druhý sviatok vianočný
+26.12|Štěpán, 🎄2. svátek vánoční|Štefan, 🎄Druhý sviatok vianočný
 27.12|Žaneta/Melánie|Filomena
 28.12|Bohumila|Ivana/Ivona
 29.12|Judita|Milada

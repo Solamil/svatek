@@ -48,7 +48,7 @@ var list = [Lines][Columns]string{{}}
 func main() {
 	file := File
 	prepareList(file)
-	fmt.Println(velikonoce(2022))
+	fmt.Println(summer_time(2023, true).String())
 	http.HandleFunc("/index.html", index_handler)
 	http.HandleFunc("/today", today_handler)
 	http.HandleFunc("/dnes", today_handler)
@@ -101,6 +101,7 @@ func today_handler(w http.ResponseWriter, r *http.Request) {
 		result = getName(list, t, Country)
 	}
 
+	fmt.Sprintf("%s, %s")
 	w.Write([]byte(result))
 }
 
@@ -126,6 +127,50 @@ func easterday_handler(w http.ResponseWriter, r *http.Request) {
 		
 	}
 	w.Write([]byte(velikonoce(year)))
+}
+
+func den_matek(year int) time.Time {
+	// Second sunday at the month of May
+	t := time.Date(year, time.May, 1, 0, 0, 0, 0, time.UTC)
+
+	if t.Weekday() == time.Sunday {
+		t = t.AddDate(0, 0, 7)
+	} else {
+		tmp := 7 - int(t.Weekday()) + 7
+		t = t.AddDate(0, 0, tmp)
+	}
+	return t
+}
+
+func den_otcu(year int) time.Time { 
+	// Third sunday at the month of June
+	t := time.Date(year, time.June, 1, 0, 0, 0, 0, time.UTC)
+
+	if t.Weekday() == time.Sunday {
+		t = t.AddDate(0, 0, 7+7)
+	} else {
+		thirdSunday := 7 - int(t.Weekday()) + 7 + 7
+		t = t.AddDate(0, 0, thirdSunday)
+	}
+	return t
+}
+
+func summer_time(year int, end bool) time.Time {
+	month := time.March
+	if end {
+		month = time.October
+	}
+	return last_sundayofmonth(year, month)
+}
+
+func last_sundayofmonth(year int, month time.Month) time.Time {
+	t := time.Date(year, month, 31, 0, 0, 0, 0, time.UTC)
+	if t.Weekday() == time.Sunday {
+		return t
+	}
+	t = t.AddDate(0, 0, -int(t.Weekday()))
+	return t
+
 }
 
 // credits to https://kalendar.beda.cz/vypocet-velikonocni-nedele-v-ruznych-programovacich-jazycich

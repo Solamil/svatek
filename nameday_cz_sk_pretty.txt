@@ -84,7 +84,7 @@ Date|cs-CZ|sk-SK
 23.3|Ivona|Adrián
 24.3|Gabriel|Gabriel
 25.3|Marián|Marián
-26.3|Emanuel|Emanuel
+26.3|Emanuel, V 02:00 začíná letní čas🕑➡️🕒|Emanuel, 02:00 začiatok letného času🕑➡️🕒
 27.3|Dita|Alena
 28.3|Soňa, Den narození Jana Amose Komenského(významný den)|Soňa
 29.3|Taťána/Táňa|Miroslav
@@ -96,10 +96,10 @@ Date|cs-CZ|sk-SK
 4.4|Ivana|Izidor
 5.4|Miroslava/Mirka|Miroslava
 6.4|Vendula/Venuše|Irena
-7.4|Heřman/Hermína, 📚Den vzdělanosti(významný den)|Zoltán
+7.4|Heřman/Hermína, 📚Den vzdělanosti(významný den), Velký pátek|Zoltán, Veľký piatok
 8.4|Ema|Albert
-9.4|Dušan|Milena
-10.4|Darja|Igor
+9.4|Dušan, Velikonoční neděle|Milena, Velikonočná nedeľa
+10.4|Darja, Velikonoční pondělí|Igor, Velikonočný pondelok
 11.4|Izabela|Július
 12.4|Julius|Estera
 13.4|Aleš|Aleš
@@ -133,7 +133,7 @@ Date|cs-CZ|sk-SK
 11.5|Svatava|Blažena
 12.5|Pankrác|Pankrác
 13.5|Servác|Servác
-14.5|Bonifác|Bonifác
+14.5|Bonifác, Svátek matek|Bonifác, Deň matiek
 15.5|Žofie/Sofie, 👪Den rodin (významný den)|Žofia/Sofia
 16.5|Přemysl|Svetozár
 17.5|Aneta|Gizela
@@ -168,7 +168,7 @@ Date|cs-CZ|sk-SK
 15.6|Vít|Vít
 16.6|Zbyněk|Bianka/Blanka, Božie telo
 17.6|Adolf/Vikoslav|Adolf
-18.6|Milan/Milana, Den hrdinů druhého odboje (významný den)|Vratislav
+18.6|Milan/Milana, Den hrdinů druhého odboje (významný den), Den otců|Vratislav, Den otcov
 19.6|Leoš/Leo|Alfréd
 20.6|Květa/Květuše|Valéria
 21.6|Alois/Aloise, 🌞První letní den|Alojz, 🌞Prvý letný deň
@@ -301,7 +301,7 @@ Date|cs-CZ|sk-SK
 26.10|Erik|Demeter
 27.10|Šarlota/Zoe|Sabína
 28.10|Alfréd, Státní svátek, Den vzniku samostatného 🇨🇿československého státu| Dobromila
-29.10|Silvie/Sylva|Klára/Kiara
+29.10|Silvie/Sylva V 03:00 končí letní čas🕒➡️🕑|Klára/Kiara 03:00 koniec letného času🕒➡️🕑
 30.10|Tadeáš|Šimon/Simon/Simona
 31.10|Štěpánka|Aurélia
 1.11|Felix|Denis/Denisa, Sviatok všetkých svätých

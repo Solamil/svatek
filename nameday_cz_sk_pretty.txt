@@ -88,7 +88,7 @@ Date|cs-CZ|sk-SK
 27.3|Dita|Alena
 28.3|Soňa, Den narození Jana Amose Komenského(významný den)|Soňa
 29.3|Taťána/Táňa|Miroslav
-30.3|Arnoštt/Ernest|Vieroslava
+30.3|Arnošt/Ernest|Vieroslava
 31.3|Kvído|Benjamín
 1.4|Hugo|Hugo
 2.4|Erika|Zita

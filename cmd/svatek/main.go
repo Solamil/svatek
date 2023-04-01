@@ -49,7 +49,7 @@ var list = [Lines][Columns]string{{}}
 func main() {
 	file := File
 	prepareList(file)
-	fmt.Println(svatek.Velikonoce(2022))
+	fmt.Println(svatek.Velikonoce(1562))
 	http.HandleFunc("/index.html", index_handler)
 	http.HandleFunc("/today", today_handler)
 	http.HandleFunc("/dnes", today_handler)
@@ -126,7 +126,8 @@ func easterday_handler(w http.ResponseWriter, r *http.Request) {
 		}
 		
 	}
-	w.Write([]byte(svatek.Velikonoce(year)))
+	d := svatek.Velikonoce(year)
+	w.Write([]byte(d.Format(time.DateOnly)))
 }
 
 func prepareList(name string) {

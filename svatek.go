@@ -1,14 +1,13 @@
 package svatek 
 
 import (
-	"fmt"
 	"time"
 )
-
+// Compute the exact day for each year
 // credits to https://kalendar.beda.cz/vypocet-velikonocni-nedele-v-ruznych-programovacich-jazycich
-func Velikonoce(rok int) string {
+func Velikonoce(rok int) time.Time {
 	if rok <= 1583 {
-		return ""
+		rok = 1584
 	}
 	zlateCislo := (rok % 19) + 1
 	julEpakta := (11 * zlateCislo) % 30
@@ -36,10 +35,13 @@ func Velikonoce(rok int) string {
 		denTydnePfm += 7
 	}
 	velNedele := pfm + 7 - denTydnePfm
+	var t time.Time
 	if velNedele < 32 {
-		return fmt.Sprintf("%d. březen", velNedele)	
-	} 
-	return fmt.Sprintf("%d. duben", velNedele-31)	
+		t = time.Date(rok, time.March, velNedele, 0, 0, 0, 0, time.UTC)
+	} else {
+		t = time.Date(rok, time.April, velNedele-31, 0, 0, 0, 0, time.UTC)
+	}
+	return t
 }
 
 

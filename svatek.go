@@ -71,3 +71,20 @@ func Denotcu(year int) time.Time {
 	return t
 }
 
+func Summertime(year int, end bool) time.Time {
+	month := time.March
+	if end {
+		month = time.October
+	}
+	return last_sundayofmonth(year, month)
+}
+
+func last_sundayofmonth(year int, month time.Month) time.Time {
+	t := time.Date(year, month, 31, 0, 0, 0, 0, time.UTC)
+	if t.Weekday() == time.Sunday {
+		return t
+	}
+	t = t.AddDate(0, 0, -int(t.Weekday()))
+	return t
+
+}

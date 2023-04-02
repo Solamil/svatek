@@ -44,7 +44,6 @@ func Velikonoce(rok int) time.Time {
 	return t
 }
 
-
 func Denmatek(year int) time.Time {
 	// Second sunday at the month of May
 	t := time.Date(year, time.May, 1, 0, 0, 0, 0, time.UTC)
@@ -76,15 +75,13 @@ func Summertime(year int, end bool) time.Time {
 	if end {
 		month = time.October
 	}
-	return last_sundayofmonth(year, month)
+	return lastSundayofmonth(year, month)
 }
 
-func last_sundayofmonth(year int, month time.Month) time.Time {
+func lastSundayofmonth(year int, month time.Month) time.Time {
 	t := time.Date(year, month, 31, 0, 0, 0, 0, time.UTC)
 	if t.Weekday() == time.Sunday {
 		return t
 	}
-	t = t.AddDate(0, 0, -int(t.Weekday()))
-	return t
-
+	return t.AddDate(0, 0, -int(t.Weekday()))
 }

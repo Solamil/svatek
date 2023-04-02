@@ -49,7 +49,7 @@ var list = [Lines][Columns]string{{}}
 func main() {
 	file := File
 	prepareList(file)
-	fmt.Println(svatek.Velikonoce(1562))
+	fmt.Println(svatek.Summertime(2023, true))
 	http.HandleFunc("/index.html", index_handler)
 	http.HandleFunc("/today", today_handler)
 	http.HandleFunc("/dnes", today_handler)

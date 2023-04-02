@@ -10,6 +10,7 @@ import (
 	"strings"
 	"strconv"
 	"os"
+	"github.com/Solamil/svatek"
 )
 
 var File string = "nameday_cz_sk.txt"
@@ -48,7 +49,7 @@ var list = [Lines][Columns]string{{}}
 func main() {
 	file := File
 	prepareList(file)
-	fmt.Println(velikonoce(2022))
+	fmt.Println(svatek.Summertime(2023, true))
 	http.HandleFunc("/index.html", index_handler)
 	http.HandleFunc("/today", today_handler)
 	http.HandleFunc("/dnes", today_handler)
@@ -125,44 +126,8 @@ func easterday_handler(w http.ResponseWriter, r *http.Request) {
 		}
 		
 	}
-	w.Write([]byte(velikonoce(year)))
-}
-
-// credits to https://kalendar.beda.cz/vypocet-velikonocni-nedele-v-ruznych-programovacich-jazycich
-func velikonoce(rok int) string {
-	if rok <= 1583 {
-		return ""
-	}
-	zlateCislo := (rok % 19) + 1
-	julEpakta := (11 * zlateCislo) % 30
-	stoleti := int(rok / 100) + 1
-	slunecniOprava := int(3 * (stoleti - 16) / 4)
-	mesicniOprava := int(8 * (stoleti - 15) / 25)
-	epakta := (julEpakta - 10 - slunecniOprava + mesicniOprava) % 30
-	if epakta < 0 {
-		epakta += 30
-	}
-	tmp := epakta
-	if epakta == 24 || (epakta == 25 && zlateCislo > 11) {
-		tmp += 1
-	}
-	pfm := 0 // Paschal Full Moon
-	if tmp < 24 {
-		pfm = 44 - tmp
-	} else {
-		pfm = 74 - tmp
-	}
-
-	gregOprava := 10 + slunecniOprava
-	denTydnePfm := (rok + (int)(rok / 4) - gregOprava + pfm) % 7
-	if denTydnePfm < 0 {
-		denTydnePfm += 7
-	}
-	velNedele := pfm + 7 - denTydnePfm
-	if velNedele < 32 {
-		return fmt.Sprintf("%d. březen", velNedele)	
-	} 
-	return fmt.Sprintf("%d. duben", velNedele-31)	
+	d := svatek.Velikonoce(year)
+	w.Write([]byte(d.Format(time.DateOnly)))
 }
 
 func prepareList(name string) {

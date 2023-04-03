@@ -127,7 +127,7 @@ func easterday_handler(w http.ResponseWriter, r *http.Request) {
 		
 	}
 	d := svatek.Velikonoce(year)
-	w.Write([]byte(d.Format(time.DateOnly)))
+	w.Write([]byte(d.Format(time.RFC822)))
 }
 
 func prepareList(name string) {

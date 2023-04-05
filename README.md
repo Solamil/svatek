@@ -13,11 +13,11 @@
 For self-hosting yourself use following commands:
 
 ```
-git clone  https://github.com/Solamil/svatek
+git clone https://github.com/Solamil/svatek
 cd svatek/
 go run main.go
 ```
 
 ## Author
 
-Michal < michal@michalkukla.xyz >
+Solamil (https://github.com/Solamil/svatek) 

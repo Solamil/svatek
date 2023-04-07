@@ -8,9 +8,9 @@
 	<body>
 		<form>
 			<span>🇨🇿</span>
-			<input id="namecs-CZ" type="text" name="namecs-CZ" placeholder="jméno" value="" list="names-cs-CZ" autocomplete="off">
+			<input id="namecs-CZ" type="text" name="namecs-CZ" placeholder="jméno" value="" list="names-cs-CZ">
 			<span>🇸🇰</span>
-			<input id="namesk-SK" type="text" name="namesk-SK" placeholder="meno" value="" list="names-sk-SK" autocomplete="off">
+			<input id="namesk-SK" type="text" name="namesk-SK" placeholder="meno" value="" list="names-sk-SK">
 			<datalist id="names-cs-CZ">
 				<option value="1.1" label="Nový rok, Státní svátek, Den obnovy samostatného českého státu">
 				<option value="2.1" label="Karina/Vasil">
@@ -379,6 +379,8 @@
 				<option value="30.12" label="David">
 				<option value="31.12" label="Silvestr">
 				<option value="26.3 v 02:00" label="Začátek letního času">
+				<option value="6.4" label="Zelený čtvrtek">
+				<option value="7.4" label="Velký pátek">
 				<option value="9.4" label="Velikonoční neděle">
 				<option value="10.4" label="Velikonoční pondělí">
 				<option value="14.5" label="Svátek matek">
@@ -754,6 +756,8 @@
 				<option value="30.12" label="Dávid">
 				<option value="31.12" label="Silvester">
 				<option value="26.3 v 02:00" label="Začiatok letného času">
+				<option value="6.4" label="Zeľený štvrtok">
+				<option value="7.4" label="Velký piatok">
 				<option value="9.4" label="Velikonočná nedeľa">
 				<option value="10.4" label="Velikonočný pondelok">
 				<option value="14.5" label="Deň matiek">
@@ -766,26 +770,29 @@
 		<p><span id="sk-SKSpan"></span>: <span id="name-sk-SK"></span></p>
 
 		<script>
-			var locales = [ "cs-CZ", "sk-SK" ]
 			var today = new Date(Date.now())
 			var day = today.getDate()
 			var month = today.getMonth() + 1
-			var list = document.getElementById("names-"+locales[0]).options
-			var index = 0
-			for (var i = 0; i < list.length; i++) {
-				if (list[i].value == day+"."+month) {
-					index = i
-					break
-				}
-			}
 
+			var locales = [ "cs-CZ", "sk-SK" ]
 			for (var i = 0; i < locales.length; i++) {
-				var span = document.getElementById(locales[i]+"Span")
-				todayFormat = new Intl.DateTimeFormat(locales[i], {weekday: "long", day:"numeric", month:"long"}).format(today)
+				var locale = locales[i]
+				var arr = []
+				var list = document.getElementById("names-"+locale).options
+				for (var j = 0; j < list.length; j++) {
+					if (list[j].value == day+"."+month) {
+						arr.push(j)
+					}
+				}
+				var span = document.getElementById(locale+"Span")
+				todayFormat = new Intl.DateTimeFormat(locale, {weekday: "long", day:"numeric", month:"long"}).format(today)
 				span.innerHTML = todayFormat
-				var output = document.getElementById("name-"+locales[i])
-				var list = document.getElementById("names-"+locales[i]).options
-				output.innerHTML = list[index].label
+				var output = document.getElementById("name-"+locale)
+				var list = document.getElementById("names-"+locale).options
+				output.innerHTML = list[arr[0]].label
+				for (var j = 1; j < arr.length; j++) {
+					output.innerHTML = output.innerHTML+", "+list[arr[j]].label
+				}
 			}
 
 		</script>

@@ -775,8 +775,7 @@
 			var month = today.getMonth() + 1
 
 			var locales = [ "cs-CZ", "sk-SK" ]
-			for (var i = 0; i < locales.length; i++) {
-				var locale = locales[i]
+			locales.forEach((locale) => {
 				var arr = []
 				var list = document.getElementById("names-"+locale).options
 				for (var j = 0; j < list.length; j++) {
@@ -793,7 +792,7 @@
 				for (var j = 1; j < arr.length; j++) {
 					output.innerHTML = output.innerHTML+", "+list[arr[j]].label
 				}
-			}
+			})
 
 		</script>
 

@@ -30,11 +30,12 @@ var PlainTextAgents = []string{
 	"http_get",
 	"xh",
 }
-//Meniny má
-//Dnes má svátek
+
 type todayUrlParams struct {
-	Country [1]string `json:"country"`
-	Pretty []string	`json:"p"`
+	Country    [1]string 	`json:"country"`
+	Pretty     []string	`json:"p"`
+	MorePretty []string	`json:"pp"`
+	Quiet 	   []string	`json:"q"`
 }
 
 type easterUrlParams struct {
@@ -69,7 +70,20 @@ func index_handler(w http.ResponseWriter, r *http.Request) {
 	t := time.Now()
 	answer := fmt.Sprintf("%s|%s", getName(list, t, "cs-CZ"), getName(list, t, "sk-SK"))
 	w.Write([]byte(answer))
+	q, _ := url.PathUnescape(r.URL.RawQuery)
+	if len(q) != 0 {
+		m, _ := url.ParseQuery(q)
+		js, _ := json.Marshal(m)
 
+		var param *todayUrlParams
+		json.Unmarshal(js, &param)		
+		if param.Quiet != nil {
+			return
+		}
+
+	}
+	w.Write([]byte("\nSupported: Czechia|Slovakia"))
+	w.Write([]byte("\nhttps://github.com/Solamil/svatek"))
 //	http.ServeFile(w, r, "web/index.html")
 }
 
@@ -81,7 +95,7 @@ func today_handler(w http.ResponseWriter, r *http.Request) {
 	country := Country
 	t := time.Now()
 //	var answer string = ""
-
+	var verbose string = ""
 	q, _ := url.PathUnescape(r.URL.RawQuery)
 	if len(q) != 0 {
 		m, _ := url.ParseQuery(q)
@@ -92,8 +106,17 @@ func today_handler(w http.ResponseWriter, r *http.Request) {
 		if len(param.Country[0]) > 0 {
 			country = param.Country[0]
 		}
-		if param.Pretty != nil {
-			fmt.Println("hello world")	
+		if param.Pretty != nil || param.MorePretty != nil {
+			switch country {
+				case "sk-SK":
+					verbose = "Meniny má "
+				default:
+				case "cs-CZ":
+					verbose = "Dnes má svátek "
+			}
+			if param.MorePretty != nil {
+				verbose = fmt.Sprintf("📆%s", verbose)
+			}
 		}
 
 	}
@@ -101,6 +124,8 @@ func today_handler(w http.ResponseWriter, r *http.Request) {
 	if result == "" {
 		result = getName(list, t, Country)
 	}
+	result = fmt.Sprintf("%s%s", verbose, result)
+
 
 	w.Write([]byte(result))
 }
